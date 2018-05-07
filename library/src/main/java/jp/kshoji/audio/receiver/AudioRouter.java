@@ -38,6 +38,11 @@ public final class AudioRouter extends BroadcastReceiver {
     /**
      * Represents headset connection information
      */
+
+    public Collection<BluetoothDevice> getConnectedBluetoothDevices(){
+        return connectedBluetoothDevices;
+    }
+
     private final class Headset {
         private String address;
         private String portName;
